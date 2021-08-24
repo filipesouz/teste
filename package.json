@@ -1,0 +1,15 @@
+{
+  "name": "firstsite",
+  "version": "1.0.0",
+  "description": "Primeiro site de Filipe",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemom server.js"
+  },
+  "keywords": [],
+  "author": "Filipe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^16.7.1"
+  }
+}
