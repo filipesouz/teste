@@ -1,2 +1,3 @@
 #Remover pastas
 node_modules/
+.DS_Store
