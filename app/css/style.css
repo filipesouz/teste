@@ -1,16 +1,18 @@
 *{
     padding: 0px;
     margin: 0px;
+  
 }
 
-.logo{
+
+.logo {
     font-size: 24px;
     text-transform: uppercase;
-    color: white;
+    color: #87ceeb;
     letter-spacing: 3px;
 }
 a{
-    color: white;
+    color: #000080;
     letter-spacing: 3px;
     text-decoration:none;
 }
@@ -20,10 +22,11 @@ a:hover {
     transition: 0.3s;
     border-radius: 5px;
 }
+
 nav{
     display: flex;
     justify-content: space-around;
-    background-color: purple;
+    background-color: white;
     height: 10vh;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -33,44 +36,59 @@ nav{
     list-style: none;
 }
 .nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-.mobil-menu{
-    cursor: pointer;
-    display: none;
-}
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin-left: 8px;
-}
-@media (max-width: 999px) {
-    body{
-        overflow-x: hidden;
-    }
-    .nav-list{
-        position: absolute;
-        top: 8vh;
-        right: 0px;
-        width: 50vw;
-        height: 92vh;
-        background: purple;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform:translateX(100%) ;
-    }
-}
-.nav-list li{
-    margin-left: 0;
-    opacity: 0;
+margin-left: 50px;
 }
 
-.mobile-menu{
-    display: block;
+.container{
+   display: grid;
+   align-items: center;
+   padding: 30px;
+   
 }
-.nav-list.active{
-    transform: translateX(0);
+.card{
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px black;
+    width: 240px;
+
+}
+.top-card h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    text-align: center;
+}
+.botton-btt{
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center ;
+    
+}
+.media{
+    background: url("https://authenticfeet.vteximg.com.br/arquivos/ids/228716-600-600/Tenis-Nike-Air-Max-27-React-Masculino-Multicolor.jpg?v=637044260135100000") center/cover;
+    height: 200px;
+    width: 100%;
+}
+body{
+background: url(../imagem/imagem1.jpeg) no-repeat center center;
+background-size: cover;
+height: 92vh;
+}
+@media(max-width:999px){
+nav{
+    text-align:center;
+    justify-content: space-around;
+    display: flex;
+}
+.logo{
+    font-size: 16px;
+}
+.nav-list li{
+    font-size: 12px;
+    margin-left: 15px;
+}
+.container{
+    justify-content: center;
+}
 }
